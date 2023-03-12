@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        background-color: #e5e5e5;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      /* Main Frame */
+      .parent {
+        height: 842px;
+        width: 595px;
+        background-color: #110f57;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        overflow: hidden;
+      }
+      /* Frame 1 */
+      .child1 {
+        height: 545px;
+        width: 350px;
+        position: absolute;
+        top: 40px;
+        left: 38px;
+      }
+      /* Logo */
+      .logo {
+        height: 33px;
+        width: 120px;
+        position: absolute;
+        top: 2px;
+        left: 12px;
+      }
+      .logoposition {
+        position: absolute;
+        top: 4px;
+        left: 42px;
+      }
+      .logofont1 {
+        font-family: "Yaldevi", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 31.58px;
+      }
+      .logofont1a {
+        font-family: "Yaldevi", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        color: #110f57;
+        line-height: 31.58px;
+      }
+      .logofont2 {
+        font-family: "Pattaya", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        color: #00fb82;
+        line-height: 33.3px;
+      }
+      /* Title */
+      .title {
+        height: 141px;
+        width: 291px;
+        position: absolute;
+        top: 106px;
+        left: 12px;
+      }
+      .titlefont {
+        font-family: "Vollkorn", serif;
+        font-style: normal;
+        font-size: 64px;
+        color: #00fb82;
+        line-height: 65.79px;
+      }
+      /* Paragraph */
+      .pgraph {
+        width: 329px;
+        height: 165px;
+        position: absolute;
+        left: 12px;
+        top: 260px;
+      }
+      .pgraphfont {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        color: #e2e2e2b2;
+        line-height: 24px;
+      }
+      /* Circle */
+      .square {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+      }
+      .circle {
+        margin-top: 0px;
+        border-radius: 100%;
+      }
+      /* Contacts */
+      .contacts {
+        height: 43px;
+        width: 170px;
+        position: absolute;
+        top: 470px;
+        left: 12px;
+        display: inline-block;
+      }
+      .google {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: inline-block;
+      }
+      .google1 {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      .fb {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        display: inline-block;
+      }
+      .fb1 {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      .twitter {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        display: inline-block;
+      }
+      .twitter1 {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      .linkedin {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 120px;
+        display: inline-block;
+      }
+      .linkedin1 {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      /* Picture Bottom */
+      .picbottom {
+        height: 348px;
+        width: 608px;
+        position: absolute;
+        top: 505px;
+        left: 0px;
+      }
+      /* Top Line */
+      .line {
+        height: 155px;
+        width: 193px;
+        position: absolute;
+        top: -10px;
+        left: 392px;
+      }
+      .line1 {
+        height: 75px;
+        width: 27px;
+        position: absolute;
+        background-color: #00fb82;
+        top: 0px;
+        left: 10px;
+        margin-top: 0px;
+        border-radius: 15px;
+      }
+      .line1-curve {
+        width: 17px;
+        height: 65px;
+      }
+      .line2 {
+        height: 105px;
+        width: 27px;
+        position: absolute;
+        background-color: #fff500;
+        top: 0px;
+        left: 45px;
+        margin-top: 0px;
+        border-radius: 15px;
+      }
+      .line2-curve {
+        width: 17px;
+        height: 95px;
+      }
+      .line3 {
+        height: 135px;
+        width: 27px;
+        position: absolute;
+        background-color: #00fb82;
+        top: 0px;
+        left: 80px;
+        margin-top: 0px;
+        border-radius: 15px;
+      }
+      .line3-curve {
+        width: 17px;
+        height: 125px;
+      }
+      .line4 {
+        height: 120px;
+        width: 27px;
+        position: absolute;
+        background-color: #fff500;
+        top: 0px;
+        left: 115px;
+        margin-top: 0px;
+        border-radius: 15px;
+      }
+      .line4-curve {
+        width: 17px;
+        height: 110px;
+      }
+      /* Ellipse 1*/
+      .square1 {
+        width: 19.87px;
+        height: 19.87px;
+        background-color: #ffffff80;
+      }
+      .circle1 {
+        margin-top: 0px;
+        border-radius: 100%;
+      }
+      .ellipsegrp1 {
+        height: 155px;
+        width: 193px;
+        position: absolute;
+        top: 378px;
+        left: 409px;
+      }
+      .ellipse1 {
+        position: absolute;
+        top: 37.36px;
+        left: 2px;
+      }
+      .ellipse2 {
+        position: absolute;
+        top: 32.47px;
+        left: 29.38px;
+      }
+      .ellipse3 {
+        position: absolute;
+        top: 27.58px;
+        left: 56.76px;
+      }
+      .ellipse4 {
+        position: absolute;
+        top: 22.68px;
+        left: 84.13px;
+      }
+      .ellipse5 {
+        position: absolute;
+        top: 17.79px;
+        left: 111.51px;
+      }
+      .ellipse6 {
+        position: absolute;
+        top: 12.89px;
+        left: 138.89px;
+      }
+      .ellipse7 {
+        position: absolute;
+        top: 8px;
+        left: 166.27px;
+      }
+      .ellipse8 {
+        position: absolute;
+        top: 64.74px;
+        left: 6.89px;
+      }
+      .ellipse9 {
+        position: absolute;
+        top: 59.85px;
+        left: 32.47px;
+      }
+      .ellipse10 {
+        position: absolute;
+        top: 54.95px;
+        left: 61.15px;
+      }
+      .ellipse11 {
+        position: absolute;
+        top: 50.06px;
+        left: 89.03px;
+      }
+      .ellipse12 {
+        position: absolute;
+        top: 45.17px;
+        left: 116.41px;
+      }
+      .ellipse13 {
+        position: absolute;
+        top: 40.27px;
+        left: 143.78px;
+      }
+      .ellipse14 {
+        position: absolute;
+        top: 35.38px;
+        left: 171.16px;
+      }
+      .ellipse15 {
+        position: absolute;
+        top: 92.12px;
+        left: 11.79px;
+      }
+      .ellipse16 {
+        position: absolute;
+        top: 87.22px;
+        left: 39.17px;
+      }
+      .ellipse17 {
+        position: absolute;
+        top: 82.33px;
+        left: 66.54px;
+      }
+      .ellipse18 {
+        position: absolute;
+        top: 77.44px;
+        left: 93.92px;
+      }
+      .ellipse19 {
+        position: absolute;
+        top: 72.54px;
+        left: 121.3px;
+      }
+      .ellipse20 {
+        position: absolute;
+        top: 67.65px;
+        left: 148.68px;
+      }
+      .ellipse21 {
+        position: absolute;
+        top: 62.76px;
+        left: 176.06px;
+      }
+      .ellipse22 {
+        position: absolute;
+        top: 119.5px;
+        left: 16.68px;
+      }
+      .ellipse23 {
+        position: absolute;
+        top: 114.6px;
+        left: 44.06px;
+      }
+      .ellipse24 {
+        position: absolute;
+        top: 109.71px;
+        left: 71.44px;
+      }
+      .ellipse25 {
+        position: absolute;
+        top: 104.82px;
+        left: 98.82px;
+      }
+      .ellipse26 {
+        position: absolute;
+        top: 99.92px;
+        left: 126.19px;
+      }
+      .ellipse27 {
+        position: absolute;
+        top: 95.03px;
+        left: 153.57px;
+      }
+      .ellipse28 {
+        position: absolute;
+        top: 90.13px;
+        left: 180.95px;
+      }
+      /* Ellipse 2*/
+      .square2 {
+        width: 19.87px;
+        height: 19.87px;
+        background-color: #ffffff99;
+      }
+      .circle2 {
+        margin-top: 0px;
+        border-radius: 100%;
+      }
+      .square3 {
+        width: 19.87px;
+        height: 19.87px;
+        background-color: #ffffff;
+      }
+      .circle3 {
+        margin-top: 0px;
+        border-radius: 100%;
+      }
+      .ellipsegrp2 {
+        height: 155px;
+        width: 193px;
+        position: absolute;
+        top: 624px;
+        left: 0px;
+      }
+      .ellipsetwo1 {
+        position: absolute;
+        top: 35.36px;
+        left: -9.11px;
+      }
+      .ellipsetwo2 {
+        position: absolute;
+        top: 62.74px;
+        left: -3.11px;
+      }
+      .ellipsetwo3 {
+        position: absolute;
+        top: 90.12px;
+        left: 1.79px;
+      }
+      .ellipsetwo4 {
+        position: absolute;
+        top: 117.5px;
+        left: 6.68px;
+      }
+      .ellipsetwo5 {
+        position: absolute;
+        top: 30.47px;
+        left: 19.38px;
+      }
+      .ellipsetwo6 {
+        position: absolute;
+        top: 57.85px;
+        left: 24.27px;
+      }
+      .ellipsetwo7 {
+        position: absolute;
+        top: 85.22px;
+        left: 29.17px;
+      }
+      .ellipsetwo8 {
+        position: absolute;
+        top: 112.6px;
+        left: 34.06px;
+      }
+      .ellipsetwo9 {
+        position: absolute;
+        top: 25.58px;
+        left: 46.76px;
+      }
+      .ellipsetwo10 {
+        position: absolute;
+        top: 52.95px;
+        left: 51.65px;
+      }
+      .ellipsetwo11 {
+        position: absolute;
+        top: 80.33px;
+        left: 56.54px;
+      }
+      .ellipsetwo12 {
+        position: absolute;
+        top: 107.71px;
+        left: 61.44px;
+      }
+      .ellipsetwo13 {
+        position: absolute;
+        top: 20.68px;
+        left: 74.13px;
+      }
+      .ellipsetwo14 {
+        position: absolute;
+        top: 48.06px;
+        left: 79.03px;
+      }
+      .ellipsetwo15 {
+        position: absolute;
+        top: 75.44px;
+        left: 83.92px;
+      }
+      .ellipsetwo16 {
+        position: absolute;
+        top: 102.82px;
+        left: 88.82px;
+      }
+      .ellipsetwo17 {
+        position: absolute;
+        top: 15.79px;
+        left: 101.51px;
+      }
+      .ellipsetwo18 {
+        position: absolute;
+        top: 43.17px;
+        left: 106.41px;
+      }
+      .ellipsetwo19 {
+        position: absolute;
+        top: 70.54px;
+        left: 111.3px;
+      }
+      .ellipsetwo20 {
+        position: absolute;
+        top: 97.92px;
+        left: 116.19px;
+      }
+      .ellipsetwo21 {
+        position: absolute;
+        top: 10.89px;
+        left: 128.89px;
+      }
+      .ellipsetwo22 {
+        position: absolute;
+        top: 38.27px;
+        left: 133.78px;
+      }
+      .ellipsetwo23 {
+        position: absolute;
+        top: 65.65px;
+        left: 138.68px;
+      }
+      .ellipsetwo24 {
+        position: absolute;
+        top: 93.03px;
+        left: 143.57px;
+      }
+      .ellipsetwo25 {
+        position: absolute;
+        top: 6px;
+        left: 156.27px;
+      }
+      .ellipsetwo26 {
+        position: absolute;
+        top: 33.38px;
+        left: 161.16px;
+      }
+      .ellipsetwo27 {
+        position: absolute;
+        top: 60.76px;
+        left: 166.06px;
+      }
+      .ellipsetwo28 {
+        position: absolute;
+        top: 88.13px;
+        left: 170.95px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="line">
+        <div class="line1 line1-curve"></div>
+      </div>
+      <div class="line">
+        <div class="line2 line2-curve"></div>
+      </div>
+      <div class="line">
+        <div class="line3 line3-curve"></div>
+      </div>
+      <div class="line">
+        <div class="line4 line4-curve"></div>
+      </div>
+      <div class="child1">
+        <div class="logo">
+          <span class="logofont1">STU</span>
+          <span class="logoposition"
+            ><img src="images/logo_shapes_26.png"
+          /></span>
+          <span class="logofont1a">_</span>
+          <span class="logofont1">DIO</span>
+          <span class="logofont2">9</span>
+        </div>
+        <div class="logo logoposition"></div>
+
+        <div class="title titlefont">Work Together</div>
+        <div class="pgraph pgraphfont">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+        <div class="contacts">
+          <div class="square circle google">
+            <div class="google1">
+              <img src="images/google.png" />
+            </div>
+          </div>
+          <div class="square circle fb">
+            <div class="fb1"><img src="images/fb.png" /></div>
+          </div>
+          <div class="square circle twitter">
+            <div class="twitter1"><img src="images/twitter.png" /></div>
+          </div>
+          <div class="square circle linkedin">
+            <div class="linkedin1">
+              <img id="img-position1" src="images/linkedin.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="picbottom"><img src="images/picperson.png" /></div>
+      <div class="ellipsegrp1">
+        <div class="square1 circle1 ellipse1"></div>
+        <div class="square1 circle1 ellipse2"></div>
+        <div class="square1 circle1 ellipse3"></div>
+        <div class="square1 circle1 ellipse4"></div>
+        <div class="square1 circle1 ellipse5"></div>
+        <div class="square1 circle1 ellipse6"></div>
+        <div class="square1 circle1 ellipse7"></div>
+        <div class="square1 circle1 ellipse8"></div>
+        <div class="square1 circle1 ellipse9"></div>
+        <div class="square1 circle1 ellipse10"></div>
+        <div class="square1 circle1 ellipse11"></div>
+        <div class="square1 circle1 ellipse12"></div>
+        <div class="square1 circle1 ellipse13"></div>
+        <div class="square1 circle1 ellipse14"></div>
+        <div class="square1 circle1 ellipse15"></div>
+        <div class="square1 circle1 ellipse16"></div>
+        <div class="square1 circle1 ellipse17"></div>
+        <div class="square1 circle1 ellipse18"></div>
+        <div class="square1 circle1 ellipse19"></div>
+        <div class="square1 circle1 ellipse20"></div>
+        <div class="square1 circle1 ellipse21"></div>
+        <div class="square1 circle1 ellipse22"></div>
+        <div class="square1 circle1 ellipse23"></div>
+        <div class="square1 circle1 ellipse24"></div>
+        <div class="square1 circle1 ellipse25"></div>
+        <div class="square1 circle1 ellipse26"></div>
+        <div class="square1 circle1 ellipse27"></div>
+        <div class="square1 circle1 ellipse28"></div>
+      </div>
+      <div class="ellipsegrp2">
+        <div class="square2 circle2 ellipsetwo1"></div>
+        <div class="square2 circle2 ellipsetwo2"></div>
+        <div class="square2 circle2 ellipsetwo3"></div>
+        <div class="square2 circle2 ellipsetwo4"></div>
+        <div class="square2 circle2 ellipsetwo5"></div>
+        <div class="square2 circle2 ellipsetwo6"></div>
+        <div class="square2 circle2 ellipsetwo7"></div>
+        <div class="square2 circle2 ellipsetwo8"></div>
+        <div class="square2 circle2 ellipsetwo9"></div>
+        <div class="square2 circle2 ellipsetwo10"></div>
+        <div class="square2 circle2 ellipsetwo11"></div>
+        <div class="square2 circle2 ellipsetwo12"></div>
+        <div class="square2 circle2 ellipsetwo13"></div>
+        <div class="square2 circle2 ellipsetwo14"></div>
+        <div class="square2 circle2 ellipsetwo15"></div>
+        <div class="square2 circle2 ellipsetwo16"></div>
+        <div class="square2 circle2 ellipsetwo17"></div>
+        <div class="square2 circle2 ellipsetwo18"></div>
+        <div class="square2 circle2 ellipsetwo19"></div>
+        <div class="square2 circle2 ellipsetwo20"></div>
+        <div class="square2 circle2 ellipsetwo21"></div>
+        <div class="square2 circle2 ellipsetwo22"></div>
+        <div class="square2 circle2 ellipsetwo23"></div>
+        <div class="square2 circle2 ellipsetwo24"></div>
+        <div class="square3 circle3 ellipsetwo25"></div>
+        <div class="square2 circle2 ellipsetwo26"></div>
+        <div class="square2 circle2 ellipsetwo27"></div>
+        <div class="square2 circle2 ellipsetwo28"></div>
+      </div>
+    </div>
+  </body>
+</html>

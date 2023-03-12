@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      background-color: #040404;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    /* Main Frame */
+    .parent {
+      height: 1970px;
+      width: 3376px;
+      background-color: #040404;
+      left: 0%;
+      transform: translateX(-0%);
+      position: relative;
+      overflow: hidden;
+    }
+    .child {
+      height: 1653px;
+      width: 2424px;
+      position: absolute;
+      top: 155px;
+      left: 468px;
+    }
+    .rectangle {
+      box-sizing: border-box;
+      height: 1594px;
+      width: 2362px;
+      border: solid #ffffff 8px;
+      position: absolute;
+      top: 33px;
+      left: 39px;
+      margin-top: 0px;
+      border-radius: 100px;
+      -webkit-backdrop-filter: blur(100px);
+      backdrop-filter: blur(100px);
+      background: linear-gradient(
+        106.32deg,
+        rgba(255, 255, 255, 0.34) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    /* Header */
+    .child1 {
+      height: 220px;
+      width: 2424px;
+      position: absolute;
+      top: 48px;
+      left: 0px;
+    }
+    /* Logo & Menu */
+    .child1a {
+      height: 220px;
+      width: 1166px;
+      position: absolute;
+      top: 0px;
+      left: 143px;
+    }
+    .logo {
+      height: 140px;
+      width: 292px;
+      position: absolute;
+      top: 43px;
+      left: 0px;
+    }
+    .menu {
+      height: 140px;
+      width: 746px;
+      position: absolute;
+      top: 43px;
+      left: 381px;
+    }
+    .menufont {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 44px;
+      color: #ffffff;
+      line-height: 51.56px;
+    }
+    li {
+      display: inline-block;
+      margin-right: 50px;
+    }
+    /* Search & Shop Now */
+    .child1b {
+      height: 220px;
+      width: 679px;
+      position: absolute;
+      top: 0px;
+      left: 1617px;
+    }
+    .search {
+      height: 140px;
+      width: 244px;
+      position: absolute;
+      top: 43px;
+      left: 36px;
+    }
+    .search1 {
+      height: 52px;
+      width: 136px;
+      position: absolute;
+      top: 10px;
+      left: 77px;
+    }
+    .shopnow {
+      height: 140px;
+      width: 314px;
+      position: absolute;
+      top: 43px;
+      left: 341px;
+    }
+    .shopnowbox {
+      box-sizing: border-box;
+      height: 90px;
+      width: 270px;
+      background-color: #ff64a5;
+      position: absolute;
+      margin-top: 0px;
+      border-radius: 100px;
+      top: 0px;
+      left: 0px;
+    }
+    .menufont1 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 44px;
+      color: #ffffff;
+      line-height: 51.56px;
+      position: absolute;
+      top: 15px;
+      left: 30px;
+    }
+    /* Center */
+    .child2 {
+      height: 886px;
+      width: 2080px;
+      position: absolute;
+      top: 384px;
+      left: 172px;
+    }
+    .rectangle1 {
+      box-sizing: border-box;
+      height: 859px;
+      width: 2006px;
+      border: solid #ffffff 7px;
+      position: absolute;
+      top: 33px;
+      left: 39px;
+      margin-top: 0px;
+      border-radius: 395px;
+    }
+    /* Picture Nike Big */
+    .nikeBig {
+      height: 608px;
+      width: 1742px;
+      position: absolute;
+      top: 144px;
+      left: 157px;
+    }
+    /* Text NIKE */
+    .ni {
+      height: 469px;
+      width: 612px;
+      position: absolute;
+      top: 213px;
+      left: 260px;
+    }
+    .ke {
+      height: 469px;
+      width: 743px;
+      position: absolute;
+      top: 213px;
+      left: 1148px;
+    }
+    .nikefont {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-size: 470px;
+      color: #ffffff;
+      line-height: 495px;
+    }
+    /* Pictures Shoes */
+    .shoes {
+      height: 1214.93px;
+      width: 835.48px;
+      position: absolute;
+      top: -380px;
+      left: 160px;
+      background: url(.png);
+      transform: rotate(0deg);
+    }
+    /* Footer */
+    .child3 {
+      height: 284px;
+      width: 2293px;
+      position: absolute;
+      top: 1324px;
+      left: 97px;
+    }
+    /* Add to Cart */
+    .cart {
+      height: 176px;
+      width: 511px;
+      position: absolute;
+      top: 74px;
+      left: 95px;
+    }
+    .cartmenu {
+      box-sizing: border-box;
+      height: 111px;
+      width: 471px;
+      background-color: #4729ff;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: 0px;
+      border-radius: 24px;
+    }
+    .cartpic {
+      box-sizing: border-box;
+      height: 66px;
+      width: 58px;
+      position: absolute;
+      top: 20px;
+      left: 70px;
+    }
+    /* Mechanics */
+    .mechanics {
+      height: 234px;
+      width: 617px;
+      position: absolute;
+      top: 16px;
+      left: 1606px;
+    }
+    .title {
+      height: 76px;
+      width: 617px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .explain {
+      height: 158px;
+      width: 617px;
+      position: absolute;
+      top: 76px;
+      left: 0px;
+    }
+    .menufont2 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 44px;
+      color: #ffffff;
+      line-height: 51.56px;
+      position: absolute;
+      top: 30px;
+      left: 150px;
+    }
+    .menufont3 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 32px;
+      color: #ffffff;
+      line-height: 39px;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <div class="rectangle"></div>
+        <div class="child1">
+          <div class="child1a">
+            <div class="logo">
+              <img src="images/Nikesmall.png" />
+            </div>
+            <ul class="menu menufont">
+              <li>Man</li>
+              <li>Women</li>
+              <li>Kid</li>
+              <li>Explore</li>
+            </ul>
+          </div>
+          <div class="child1b">
+            <div class="search">
+              <img src="images/Search.png" />
+              <div class="search1 menufont">Search</div>
+            </div>
+            <div class="shopnow">
+              <div class="shopnowbox">
+                <div class="menufont1">Shop Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child2">
+          <div class="nikeBig"><img src="images/Nikebig.png" /></div>
+          <div class="rectangle1"></div>
+          <div class="ni nikefont">NI</div>
+          <div class="shoes"><img src="images/shoes.png" /></div>
+          <div class="ke nikefont">KE</div>
+        </div>
+        <div class="child3">
+          <div class="cart">
+            <div class="cartmenu">
+              <div class="cartpic"><img src="images/cart.png" /></div>
+              <div class="menufont2">Add to Cart</div>
+            </div>
+          </div>
+          <div class="mechanics">
+            <div class="title menufont1">Ultra Mechanics</div>
+            <div class="explain menufont3">When a player steps in, a custom motor
+                and gear train senses the tension needed
+                by the foot</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
